@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Authors: Elia Cereda, Jerome Guzzi
-# Licence: MIT
 # This is an extension of the [example provided by Bitcraze]
 # (https://github.com/bitcraze/AIdeck_examples/blob/master/NINA/viewer.py),
 # using opencv instead of gtk to display the image
