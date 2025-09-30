@@ -47,7 +47,7 @@ uint32_t rng_random_bits(uint8_t n_bits) {
     uint32_t valid = entropy_mask & mask;
 
     if (valid != mask) {
-        CO_ASSERTION_FAILURE("Unsufficient entropy\n");
+        CO_ASSERTION_FAILURE("Insufficient entropy\n");
     }
 
     entropy      = entropy >> n_bits;

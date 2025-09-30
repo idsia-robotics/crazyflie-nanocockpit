@@ -38,7 +38,6 @@ class PltViewer:
         parser = argparse.ArgumentParser(description='Connect to AI-deck streamer')
         parser.add_argument("-host", default="aideck.local", metavar="host", help="AI-deck host")
         parser.add_argument("-port", type=int, default='5000', metavar="port", help="AI-deck port")
-        # parser.add_argument("-pipe", type=str, default='', metavar="pipe", help="Pipe path")
         parser.add_argument("--no-udp-send", action='store_false', dest='udp_send', help="Do not send replies over UDP")
         parser.add_argument("-save", type=str, default=None, metavar="save", help="Save images to output directory")
         args = parser.parse_args()

@@ -76,12 +76,10 @@ class CPXPacket:
         self.payload = bytes(payload)
 
 class CPXClient:
-    def __init__(self, pipe: str = None, host: str = None, port: int = 5000, udp_send: bool = True, log_fn=print) -> None:
+    def __init__(self, host: str = None, port: int = 5000, udp_send: bool = True, log_fn=print) -> None:
         self.log = log_fn
 
-        if pipe is not None:
-            raise NotImplementedError("Pipe transport is not implemented yet")
-        elif host is not None:
+        if host is not None:
             from .transport import MultiClientTransport
             self.transport = MultiClientTransport(host, port, log_fn=self.log, udp_send=udp_send)
         else:
