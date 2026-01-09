@@ -1,6 +1,7 @@
 TITLE-ABS-KEY(
   (
-    (nano-uav OR nano-drone OR 
+    (nano-uav OR nano-uavs OR
+        nano-drone OR nano-drones OR 
         nanocopter OR nano-quadrotor) OR 
     (palm-size AND uav) OR 
     (palm-size AND drone) OR 
